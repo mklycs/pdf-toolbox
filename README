@@ -1,0 +1,12 @@
+# PDF Metadata and Protection Tool
+This tool allows you to view, edit and protect PDF metadata.
+
+## Functions
+1. **Display metadata**: Displays the metadata of a PDF document.
+2. **Create new PDF with different metadata**: Creates a new PDF file with changed metadata.
+3. **Overwrite metadata of a PDF**: Overwrites the metadata of an existing PDF file.
+4. **Add password to PDF**: Adds a password to a PDF file to protect it.
+
+## Prerequisites
+- Python 3.x
+- PyPDF2 library
