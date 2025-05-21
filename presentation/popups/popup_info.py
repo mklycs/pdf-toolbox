@@ -12,7 +12,13 @@ class PopupInfo(QMessageBox):
         if message.startswith("Failed"):
             self.setWindowTitle("Error")
             self.setIcon(QMessageBox.Critical)
-        else:
+        elif message.startswith("The file"):
+            self.setWindowTitle("Warning")
+            self.setIcon(QMessageBox.Warning)
+        elif message.startswith("An unexpected"):
+            self.setWindowTitle("Error")
+            self.setIcon(QMessageBox.Critical)
+        else: # "Completed merging PDF pages."
             self.setWindowTitle("Information")
             self.setIcon(QMessageBox.Information)
         
